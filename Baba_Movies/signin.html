@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Baba Movies | Sign In</title>
+    <link rel="icon" type="image/png" href="logo.png">
+    <link rel="stylesheet" href="style/loginStyle.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body> 
+
+    <div class="navbar">
+      <h2 class="logo"><img class="logo-img" src="logo.png">Baba<span>Movies</span></h2>
+      <div class="nav-links-div">
+        <ul class="nav-links">
+          <li><a href="home.html"><i class="fa fa-home"></i> HOME</a></li>
+          <li><a href="subscription.html">SUBSCRIPTION</a></li>
+          <li><a href="signin.html">SIGN IN</a></li>
+          <li class="about-us-btn"><a href="#">ABOUT US</a></li>
+        </ul>
+      </div>
+    </div>
+
+<div class="wrapper">
+    <div class="form-box">
+    
+        <div class="login-container" id="login">
+            <div class="top">
+                Login
+            </div>
+            <div class="input-box">
+                <input type="text" class="input-field login-email-field" placeholder="Email">
+                <i class="bx bx-envelope"></i>
+                <p class="error1"></p>
+            </div>
+            
+            
+            <div class="input-box" id="input-box-lock">
+                <input type="password" class="input-field login-password-field" id="password" placeholder="Password">
+                <i class="bx bx-lock-alt"></i>
+                <p class="error2"></p>
+                <img src="password-hide.png" class="password-hide" id="password-hide" onclick="pass();">
+            </div>
+            <div class="input-box">
+                <input type="submit" class="submit login-submit" value="Sign In">
+            </div>
+            <div class="two-col">
+                <div class="one">
+                    <span>Don't have an account? <a href="#" onclick="register()">Sign Up</a></span>
+                </div>
+                <div class="two">
+                    <label><a href="#">Forgot password?</a></label>
+                </div>
+            </div>
+        </div>
+
+        <div class="register-container" id="register">
+            <div class="top">
+                <header>Register</header>
+            </div>
+            <div class="two-forms">
+                <div class="input-box">
+                    <input type="text" class="input-field fname-field" placeholder="Firstname">
+                    <i class="bx bx-user"></i>
+                    <p class="error3"></p>
+                </div>
+                <div class="input-box">
+                    <input type="text" class="input-field lname-field" placeholder="Lastname">
+                    <i class="bx bx-user"></i>
+                    <p class="error4"></p>
+                </div>
+            </div>
+            <div class="input-box">
+                <input type="text" class="input-field register-email-field" placeholder="Email">
+                <i class="bx bx-envelope"></i>
+                <p class="error5"></p>
+            </div>
+            <div class="input-box" id="input-box-lock2">
+                <input type="password" class="input-field register-password-field" placeholder="Password" id="password2">
+                <i class="bx bx-lock-alt"></i>
+                <p class="error6"></p>
+                <img src="password-hide.png" class="password-hide2" id="password-hide2" onclick="pass2();">
+            </div>
+            <div class="input-box">
+                <input type="submit" class="submit register-submit" value="Sign Up">
+            </div>
+            <div class="two-col">
+                <div class="one">
+                  <span>Have an account? <a href="#" onclick="login()">Login</a></span>
+                </div>
+                <div class="two">
+                    <label><a href="#">Terms & conditions</a></label>
+                </div>
+            </div>
+        </div>
+
+                
+        <div class="login-overlay">
+            <div class="overlay-div"> 
+                Login Successful &#10003;
+                <div>
+                    <button class="login-okay">Okay</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="register-overlay">
+            <div class="overlay-div"> 
+                Account Registered &#10003;
+                <div>
+                    <button class="register-okay">Okay</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>   
+
+<script type="text/javascript" src="script/loginScript.js"></script>
+
+</body>
+</html>

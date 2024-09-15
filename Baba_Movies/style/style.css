@@ -1,0 +1,159 @@
+    * {
+      padding: 0;
+      margin: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+  
+    .home-page {
+      width: 100%;
+      height: 100vh;
+      background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(baba.jpg);
+      background-size: cover;
+      background-position: center;
+    }
+    
+    .logo {
+      color: white;
+      cursor: pointer;
+      font-size: 36px;
+      display: flex;
+      align-items: center;
+      margin-left: 50px;
+      padding-bottom: 10px;
+    }
+    
+    .logo span {
+      color: rgb(0, 162, 255);
+      padding: 2px;
+      font-size: 40px;
+    }
+    
+    .logo-img{
+      width: 60px;
+      
+    }
+  
+    .navbar {
+      width: 100%;
+      padding: 25px 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .nav-links{
+      padding: 0px;
+    }
+  
+    .nav-links-div{
+      margin-right: 80px;
+      display: flex;
+      flex-shrink: 0;
+    }
+
+    .nav-links li {
+      list-style: none;
+      display: inline-block;
+      margin: 0px 20px;
+      font-size: 18px;
+    }
+    
+    .nav-links li a {
+      text-decoration: none;
+      color: white;
+    }
+    
+    .nav-links li a:hover {
+      color: rgb(0, 162, 255);
+      transition: color 0.15s;
+    }
+    
+    @media (max-width: 750px) {
+      .nav-links li {
+        margin: 0px 6px;
+      }
+    
+      .logo{
+        margin-left: 0;
+      }
+    }
+    
+    @media (min-width: 751px) and (max-width: 999px) {
+      .nav-links li {
+        margin: 0px 6px;
+      }
+    
+      .nav-links-div{
+        margin-right: 10px;
+      }
+    }
+    .watch-content {
+      width: 100%;
+      position: absolute;
+      top: 40%;
+      text-align: center;
+      color: white;
+    }
+    
+    .watch-content h1 {
+      font-size: 50px;
+    }
+
+    .watch-content p {
+      font-size: 18px;
+    }
+    
+    .search-bar {
+      height: 40px;
+      width: 250px;
+      border: none;
+      border-radius: 20px;
+      margin-top: 8px;
+      font-family: 'fontawesome';
+      font-size: 18px;
+      padding-left: 14px;
+    }
+
+    .search-bar:focus{
+      outline: none;
+      border: 3px solid rgb(0, 162, 255);
+    }
+
+    button {
+      width: 120px;
+      height: 40px;
+      text-align: center;
+      border: 2px solid rgb(0, 162, 255);
+      background: transparent;
+      color: white;
+      margin: 8px;
+      cursor: pointer;
+      border-radius: 12px;
+      font-size: 16px;
+    }
+    
+    button:hover {
+      transform: scale(1.1);
+      transition: 200ms;
+    }
+    
+    .main-content {
+      background-color: black;
+      color: white;
+      padding: 20px;
+    }
+    
+    .main-content h3 {
+      font-size: 20px;
+      margin-left: 5%;
+      color: rgb(0, 162, 255);
+    }
+    
+    .main-content p {
+      font-size: 18px;
+      margin-left: 5%;
+      margin-right: 5%;
+    }

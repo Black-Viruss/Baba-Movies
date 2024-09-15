@@ -1,0 +1,341 @@
+body{
+    font-family: cursive;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.home-page {
+  width: 100%;
+  min-height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(baba.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.logo {
+  color: white;
+  cursor: pointer;
+  font-size: 36px;
+  display: flex;
+  align-items: center;
+  margin-left: 50px;
+  padding-bottom: 10px;
+  font-family: serif;
+}
+
+.logo span {
+  color: rgb(0, 162, 255);
+  padding: 2px;
+  font-size: 40px;
+  font-family: serif;
+}
+
+.logo-img{
+  width: 60px;
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-links-div{
+  margin-right: 80px;
+  display: flex;
+  flex-shrink: 0;
+}
+
+.nav-links{
+  padding: 0px;
+}
+.nav-links li {
+  list-style: none;
+  display: inline-block;
+  margin: 0px 20px;
+  font-size: 18px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  font-family: serif;
+}
+
+.nav-links li a:hover {
+  color: rgb(0, 162, 255);
+  transition: color 0.15s;
+}
+
+.subscription{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 80px;
+  row-gap: 40px;
+  padding: 40px;
+  box-sizing: border-box; 
+}
+
+@media (max-width: 750px) {
+  .subscription {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .nav-links li {
+    margin: 0px 6px;
+  }
+
+  .logo{
+    margin-left: 0;
+  }
+}
+
+@media (min-width: 751px) and (max-width: 999px) {
+  .subscription {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .nav-links li {
+    margin: 0px 6px;
+  }
+
+  .nav-links-div{
+    margin-right: 10px;
+  }
+}
+
+.basic{
+    text-align: center;
+    position: relative;
+    border: 3px solid rgb(0, 162, 255);
+    border-radius: 12px;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.basic:hover{
+    transform: scale(1.1);
+    transition: 300ms;
+}
+
+.basic h1{
+    display: inline-block;
+    border-top: 5px solid rgb(0, 162, 255);;
+    width: 100%;
+    padding-top: 5%;
+    font-size: 40px;
+    color: white;
+}
+
+.basic h2{
+    margin-top: 10%;
+    color: rgb(0, 162, 255);
+}
+
+.basic p{
+    display: inline-block;
+    position: absolute;
+    top: 174px;
+    left: 110px;
+    font-size: 12px;
+    color: rgb(198, 188, 188);
+}
+
+.basic ul {
+    list-style: none;
+    line-height: 40px;
+}
+
+.basic ul li{
+    margin-right: 30px;
+    color: white;
+}
+
+.basic button{
+    width: 130px;
+    height: 36px;
+    background-color: rgb(0, 162, 255);
+    border-color: rgb(0, 162, 255);
+    border: none;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    margin-bottom: 36px;
+}
+
+.basic button:hover{
+    background-color: rgb(2, 143, 224);
+    transition: background-color 0.15s;
+}
+
+.standard{
+    background-color: white;
+    text-align: center;
+    position: relative;
+    border: 3px solid rgb(0, 162, 255);
+    border-radius: 12px;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.standard:hover{
+    transform: scale(1.1);
+    transition: 300ms;
+}
+.standard h1{
+    display: inline-block;
+    border-top: 5px solid rgb(0, 162, 255);
+    width: 100%;
+    padding-top: 5%;
+    font-size: 40px;
+    color: white;
+}
+.standard h2{
+    margin-top: 10%;
+    color: rgb(0, 162, 255);
+}
+.standard p{
+    display: inline-block;
+    position: absolute;
+    top: 174px;
+    left: 110px;
+    font-size: 12px;
+    color: rgb(198, 188, 188);
+}
+.standard ul {
+    list-style: none;
+    line-height: 40px;
+}
+.standard ul li{
+    margin-right: 30px;
+    color: white;
+}
+.standard button{
+    width: 130px;
+    height: 36px;
+    background-color: rgb(0, 162, 255);
+    border-color: rgb(0, 162, 255);
+    border: none;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 36px;
+}
+.standard button:hover{
+    background-color: rgb(2, 143, 224);
+    transition: background-color 0.15s;
+}
+
+.premium{
+    background-color: white;
+    text-align: center;
+    position: relative;
+    border: 3px solid rgb(0, 162, 255);
+    border-radius: 12px;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.premium:hover{
+    transform: scale(1.1);
+    transition: 300ms;
+}
+.premium h1{
+    display: inline-block;
+    border-top: 5px solid rgb(0, 162, 255);
+    width: 100%;
+    padding-top: 5%;
+    font-size: 40px;
+    color: white;
+}
+.premium h2{
+    margin-top: 10%;
+    color: rgb(0, 162, 255);
+}
+.premium p{
+    display: inline-block;
+    position: absolute;
+    top: 174px;
+    left: 110px;
+    font-size: 12px;
+    color: rgb(198, 188, 188);
+}
+.premium ul {
+    list-style: none;
+    line-height: 40px;
+}
+.premium ul li{
+    margin-right: 30px;
+    color: white;
+}
+.premium button{
+    width: 130px;
+    height: 36px;
+    background-color: rgb(0, 162, 255);
+    border-color: rgb(0, 162, 255);
+    border: none;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 36px;
+}
+.premium button:hover{
+    background-color: rgb(2, 143, 224);
+    transition: background-color 0.15s;
+}
+
+.elite{
+    background-color: white;
+    text-align: center;
+    position: relative;
+    border: 3px solid rgb(0, 162, 255);
+    border-radius: 12px;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.elite:hover{
+    transform: scale(1.1);
+    transition: 300ms;
+}
+.elite h1{
+    display: inline-block;
+    border-top: 5px solid rgb(0, 162, 255);
+    width: 100%;
+    padding-top: 5%;
+    font-size: 40px;
+    color: white;
+}
+
+.elite h2{
+    margin-top: 10%;
+    color: rgb(0, 162, 255);
+}
+
+.elite p{
+    display: inline-block;
+    position: absolute;
+    top: 174px;
+    left: 110px;
+    font-size: 12px;
+    color: rgb(198, 188, 188);
+}
+
+.elite ul {
+    list-style: none;
+    line-height: 40px;
+}
+
+.elite ul li{
+    margin-right: 30px;
+    color: white;
+}
+
+.elite button{
+    width: 130px;
+    height: 36px;
+    background-color: rgb(0, 162, 255);
+    border-color: rgb(0, 162, 255);
+    border: none;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 36px;
+}
+.elite button:hover{
+    background-color: rgb(2, 143, 224);
+    transition: background-color 0.15s;
+}
